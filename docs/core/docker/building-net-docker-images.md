@@ -93,8 +93,7 @@ npm install -g yo generator-aspnet generator-docker
 
 For a reference point, before we containerize the application, first run the application locally. 
 
-The finished application is located in the
-[dotnet/core-docs repository on GitHub](https://github.com/dotnet/docs/tree/master/samples/core/docker/building-net-docker-images).
+[Download the sample app](https://github.com/dotnet/docs/tree/master/samples/core/docker/building-net-docker-images) for this topic. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-or-downloading-samples).
 
 Create a directory for your application.
 

@@ -72,8 +72,6 @@ Structs are defined by using the [struct](../../../csharp/language-reference/key
   
 -   [How to: Implement User-Defined Conversions Between Structs](../../../csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)  
   
--   [More About Variables](http://go.microsoft.com/fwlink/?LinkId=221230) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)  
-  
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)   

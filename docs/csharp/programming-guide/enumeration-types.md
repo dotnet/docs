@@ -105,10 +105,7 @@ Console.WriteLine("{0} is month number #{1}.", thisMonth, monthNumber);
  For more information, see <xref:System.Enum?displayProperty=fullName>.  
   
  You can also create a new method for an enum by using an extension method. For more information, see [How to: Create a New Method for an Enumeration](../../csharp/programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).  
-  
-## Featured Book Chapter  
- [More About Variables](http://go.microsoft.com/fwlink/?LinkId=221230) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)  
-  
+
 ## See Also  
  <xref:System.Enum?displayProperty=fullName>   
  [C# Programming Guide](../../csharp/programming-guide/index.md)   
